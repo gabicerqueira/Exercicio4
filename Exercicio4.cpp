@@ -52,6 +52,56 @@
 //matemática que ele deseja(+, -, *ou / ), mostre o resultado
 //da conta de acordo com a operação que ele escolheu
 
+//#include <iostream>
+//#include <locale>
+//using namespace std;
+//
+//int main() {
+//	setlocale(LC_ALL, "pt_BR.UTF-8");
+//
+//	int numero1;
+//	int numero2;
+//	char operacao;
+//	cout << "Informe um número";
+//	cin >> numero1;
+//	cout << "Informe outro número";
+//	cin >> numero2;
+//	cout << "Informe a operação matemática (+, -, * ou /)";
+//	cin >> operacao;
+//	int resultado1 = numero1 + numero2;
+//	int resultado2 = numero1 - numero2;
+//	int resultado3 = numero1 * numero2;
+//	double resultado4 = numero1 / numero2;
+//
+//	switch (operacao)
+//	{
+//	case '+':
+//		cout << resultado1;
+//		break;
+//	case '-':
+//		cout << resultado2;
+//		break;
+//	case '*':
+//		cout << resultado3;
+//		break;
+//	case '/':
+//		cout << resultado4;
+//		break;
+//	default:
+//		cout << "Operação inválida";
+//		break;
+//	}
+//}
+
+
+
+
+
+
+//3 – Peça para o usuário digitar uma letra, se a letra for A, E, I,
+//O ou U, mostre vogal, caso ele digite outra letra, mostre
+//consoante
+
 #include <iostream>
 #include <locale>
 using namespace std;
@@ -59,36 +109,29 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "pt_BR.UTF-8");
 
-	int numero1;
-	int numero2;
-	char operacao;
-	cout << "Informe um número";
-	cin >> numero1;
-	cout << "Informe outro número";
-	cin >> numero2;
-	cout << "Informe a operação matemática (+, -, * ou /)";
-	cin >> operacao;
-	int resultado1 = numero1 + numero2;
-	int resultado2 = numero1 - numero2;
-	int resultado3 = numero1 * numero2;
-	int resultado4 = numero1 / numero2;
+	char letra;
+	cout << "Digite uma letra";
+	cin >> letra;
 
-	switch (operacao)
+	switch (letra)
 	{
-	case '+':
-		cout << resultado1;
+	case 'a':
+		cout << 'Vogal';
 		break;
-	case '-':
-		cout << resultado2;
+	case 'e':
+		cout << 'Vogal';
 		break;
-	case '*':
-		cout << resultado3;
+	case 'i':
+		cout << 'Vogal';
 		break;
-	case '/':
-		cout << resultado4;
+	case 'o':
+		cout << 'Vogal';
+		break;
+	case 'u':
+		cout << 'Vogal';
 		break;
 	default:
-		cout << "Operação inválida";
+		cout << "Consoante";
 		break;
 	}
 }
